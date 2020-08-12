@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(52, 33, 70);
+    text-align: center;
+    margin: auto;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 50px;
+}
+
+.button {
+    background-color: rgb(52, 33, 70);
+    text-align: center;
+    color: white;
+}
