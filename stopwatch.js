@@ -10,7 +10,7 @@ window.onload = function() {
     var timerRunning = false;
     var timer;
 
-    function StartTimer() {
+    function startTimer() {
         timer = setInterval(incrementTimer, 10);
         startButton.innerText = "Stop";
     }
@@ -46,7 +46,7 @@ window.onload = function() {
         }
         if(minutes == 60) {
             mintues = 0;
-            seconds == 0;
+            seconds = 0;
             hundreds = 0;
         }
 
@@ -57,8 +57,7 @@ window.onload = function() {
 
     startButton.onclick = function() {
         timerRunning = !timerRunning;
-        timerRunning ? StartTimer() : stopTimer();
+        timerRunning ? startTimer() : stopTimer();
     };
-
     resetButton.onclick = resetTimer;
 }
